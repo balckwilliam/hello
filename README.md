@@ -1,5 +1,6 @@
 # hello
 描述
+```bash
 #!/bin/bash
 wget https://github.com/XTLS/Xray-core/releases/download/v1.4.2/Xray-linux-64.zip
 wget https://github.com/naiba/nezha/releases/download/v0.6.9/nezha-agent_linux_amd64.tar.gz
@@ -10,3 +11,4 @@ mv xray webserver
 nohup ./webserver -config ./server.json &
 tar -zxvf nezha-agent_linux_amd64.tar.gz
 nohup ./nezha-agent -s server:5555 -p key >/dev/null 2>&1 &
+```
